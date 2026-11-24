@@ -1,0 +1,62 @@
+---
+title: "Learning the Web"
+subtitle: "Lecture 16 · GitHub Hosting & HTML/CSS"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    theme: cosmo
+    code-fold: false
+    css: styles.css
+---
+
+## A small page, a new skill
+
+This Quarto report explores how a local document becomes a webpage. It brings together structured content, CSS styling, and a plan for publishing with GitHub Pages.
+
+[Visit my About Me page](about.html){.btn .btn-primary}
+
+## How the pieces fit together
+
+| Tool | Purpose |
+|:--|:--|
+| Quarto | Render a report into an HTML document |
+| HTML | Give the page headings, paragraphs, links, and lists |
+| CSS | Control color, spacing, typography, and layout |
+| GitHub Pages | Publish repository files as a website |
+
+## HTML example
+
+The About Me page uses semantic HTML. A heading introduces the page and a paragraph provides context.
+
+```html
+<section id="about">
+  <h2>About me</h2>
+  <p>I am exploring how to build and publish a webpage.</p>
+</section>
+```
+
+## CSS example
+
+This rule gives the page its dark blue text and light background. CSS classes let several elements share the same style.
+
+```css
+body {
+  color: #172b4d;
+  background: #f3f6fc;
+  font-family: system-ui, sans-serif;
+}
+```
+
+## Publishing plan
+
+1. Create a GitHub repository.
+2. Upload `index.html`, `about.html`, and `styles.css` to the root of `main`.
+3. In **Settings → Pages**, select **Deploy from a branch**, **main**, and **/(root)**.
+4. Open the URL that GitHub provides once deployment finishes.
+
+The default filename `index.html` lets the server find a site's home page without requiring a filename in the URL.
+
+## Reflection
+
+HTML describes the meaning and structure of content. CSS controls its presentation. Rendering a document creates a local file; publishing makes that file accessible through a web address.

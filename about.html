@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An introductory About Me page created for an HTML and CSS class exercise.">
+  <title>About Me · Learning the Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="about-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-wrap">
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Learning the Web<span class="accent">.</span></a>
+      <nav aria-label="Main navigation"><a href="index.html">Report</a><a href="#about">About</a><a href="#learning">Learning</a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="intro-title">
+        <div>
+          <p class="eyebrow">HELLO, WORLD / ABOUT ME</p>
+          <h1 id="intro-title">One page.<br>A world of<br><span class="accent">possibilities.</span></h1>
+          <p class="intro">Welcome to my first HTML &amp; CSS page. This is a small space to introduce myself and explore how the web works.</p>
+          <a class="button" href="#learning">Explore this project</a>
+        </div>
+        <div class="code-art" aria-label="Illustration of HTML and CSS code">
+          <div class="window-bar"><span></span><span></span><span></span><p>about.html</p></div>
+          <pre><code><span class="code-muted">&lt;!-- a little introduction --&gt;</span>
+<span class="code-pink">&lt;about-me&gt;</span>
+  curiosity: <span class="code-green">always</span>;
+  learning: <span class="code-green">in progress</span>;
+  next-step: <span class="code-green">publish</span>;
+<span class="code-pink">&lt;/about-me&gt;</span></code></pre>
+          <p class="art-caption">Built with curiosity. Styled with CSS.</p>
+        </div>
+      </section>
+      <section class="about-section" id="about">
+        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+        <h2>About me</h2>
+        <p>I am exploring how to build and publish a webpage. For this class exercise, I am practicing HTML structure, CSS styling, and GitHub hosting.</p>
+        <p class="edit-note">Personalize this section: add your name, major, and a few interests before sharing.</p>
+      </section>
+      <section class="learning-section" id="learning" aria-labelledby="learning-title">
+        <div class="section-heading"><h2 id="learning-title">What I’m learning</h2><p>Three pieces of the same puzzle.</p></div>
+        <div class="learning-grid">
+          <article><span class="topic-label">HTML</span><h3>Give ideas structure.</h3><p>Use headings, paragraphs, lists, and links to organize a meaningful page.</p></article>
+          <article><span class="topic-label">CSS</span><h3>Make it feel like you.</h3><p>Explore typography, color, spacing, and layouts that work on different screen sizes.</p></article>
+          <article><span class="topic-label">GITHUB PAGES</span><h3>Put it on the web.</h3><p>Store the files in a repository and publish a page others can visit.</p></article>
+        </div>
+      </section>
+    </main>
+    <footer><p>Lecture 16 · HTML/CSS practice</p><a href="index.html">Read the Quarto report</a></footer>
+  </div>
+</body>
+</html>
